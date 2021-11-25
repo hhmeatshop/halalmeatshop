@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            
+            <span class="ml-3 text-xl">Hygienic Halal Meat shop</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html"class="mr-5 hover:text-gray-900">Home</a>
+            <a href="ourservices.html"class="mr-5 hover:text-gray-900">Pricing</a>
+            <a href="contacts.html"class="mr-5 hover:text-gray-900">Contacts</a>
+          </nav>
+        </div>
+      </header>
+<br>
+
+
+<div class="w3-content" style="max-width:400px">
+
+  <img class="mySlides" src="discount.png" style="width:100%">
+
+
+
+  <img class="mySlides" src="delivery.jpg" style="width:100%">
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
+}
+</script>
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Hygienic Halal Meat Shop</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fresh and Healthy Chicken Meat available 24/7 we also offer home delivery in day time.            Buy at very cheap price</p>
+      </div>
+      
+            <img alt="gallery"  src="pasl.png" style="width:100%" >
+            
+        
+        
+      <p><br> Location: <b>Balkumari Chowk</b> </p> <br> <p><br> Order by Phone: <b>9804222708</b> </p> <br>
+</body>
+
+</html>
